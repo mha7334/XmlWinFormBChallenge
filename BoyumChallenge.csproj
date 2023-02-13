@@ -9,7 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\XmlSerializationLib\WebOrderLib.csproj" />
+    <Compile Remove="Challenge.UnitTests\**" />
+    <Compile Remove="XmlSerializationLib\**" />
+    <EmbeddedResource Remove="Challenge.UnitTests\**" />
+    <EmbeddedResource Remove="XmlSerializationLib\**" />
+    <None Remove="Challenge.UnitTests\**" />
+    <None Remove="XmlSerializationLib\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BoyumChallenge\XmlSerializationLib\WebOrderLib.csproj" />
   </ItemGroup>
 
 </Project>

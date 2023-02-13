@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\BoyumChallenge\XmlSerializationLib\WebOrderLib.csproj" />
+    <ProjectReference Include="..\BoyumChallenge\XmlSerializationLib\WebOrderLib.csproj" />
   </ItemGroup>
 
 </Project>

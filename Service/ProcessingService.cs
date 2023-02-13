@@ -1,6 +1,8 @@
-﻿namespace WebOrderLib
+﻿using System.Xml.Serialization;
+
+namespace WebOrderLib
 {
-    public class ProcessingService : IProcessingService<WebOrder>
+    public class ProcessingService
     {
         public WebOrder Process(string file)
         {

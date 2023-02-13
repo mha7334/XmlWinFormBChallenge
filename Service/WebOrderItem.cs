@@ -1,4 +1,6 @@
-﻿namespace WebOrderLib
+﻿using System.Xml.Serialization;
+
+namespace WebOrderLib
 {
     [XmlType("Item")]
     public class WebOrderItem

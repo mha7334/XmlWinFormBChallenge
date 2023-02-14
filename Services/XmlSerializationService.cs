@@ -6,7 +6,6 @@ namespace WebOrderLib
     {
         public WebOrder Process(string file)
         {
-
             if (!File.Exists(file))
                 throw new FileNotFoundException("Missing Xml file");
 

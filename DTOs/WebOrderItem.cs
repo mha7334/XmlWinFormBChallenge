@@ -17,6 +17,5 @@ namespace WebOrderLib
 
         [XmlElement("Quantity")]
         public int Quantity { get; set; }
-
     }
 }

@@ -41,7 +41,6 @@ namespace WebOrderLib
             get
             {
                 return Items.Select(i => i.Price).Average();
-
             }
         }
 

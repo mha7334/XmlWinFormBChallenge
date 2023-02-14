@@ -5,3 +5,5 @@ Summary
 -	To handle the Date format (“yyyyMMdd”) properly during de-serialization, a little manual intervention was required. 
 -	Two extra helper properties (AveragePrice and TotalPrice) are added.
 -	In the end, the data from c# objects ‘WebOrder’ and ‘WebOrderItem’ are used to show the Customer Data Card on Winform UI. There has been taken care to format the AveragePrice and TotalPrice to show the thousand operator (dot) and decimal separator (comma) properly.
+-	Some unit tests were also added but removed later
+-	The solution is developed in ~2 hours.

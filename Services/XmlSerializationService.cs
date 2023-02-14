@@ -2,7 +2,7 @@
 
 namespace WebOrderLib
 {
-    public class ProcessingService
+    public class XmlSerializationService
     {
         public WebOrder Process(string file)
         {

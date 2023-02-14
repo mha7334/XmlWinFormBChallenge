@@ -28,17 +28,14 @@ namespace BoyumChallenge
         {
             try
             {
-                ProcessingService service = new();
+                XmlSerializationService service = new();
                 var webOrder = service.Process(txtFilePath.Text);
-
-                var culture = CultureInfo.CreateSpecificCulture("da-DK");
-
 
                 lblId.Text = webOrder.Id;
                 lblCustomer.Text = webOrder.Customer;
                 lblDate.Text = webOrder.Date.ToString("dd. MMMM. yyyy");
-                lblPrice.Text = webOrder.AveragePrice.ToString("N03", culture); ;
-                lblTotal.Text = webOrder.TotalPrice.ToString("N03", culture);
+                lblPrice.Text = webOrder.AveragePrice.ToString("N03", CultureInfo.CreateSpecificCulture("da-DK")); ;
+                lblTotal.Text = webOrder.TotalPrice.ToString("N03", CultureInfo.CreateSpecificCulture("da-DK"));
 
             }
             catch (Exception ex)

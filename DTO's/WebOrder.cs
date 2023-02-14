@@ -33,7 +33,7 @@ namespace WebOrderLib
 
         [XmlArray("Items")]
         [XmlArrayItem("Item")]
-        public WebOrderItem[] Items { get; set; }
+        public WebOrderItem[]? Items { get; set; }
 
 
         public decimal AveragePrice
